@@ -6,6 +6,15 @@
 -- Criar banco de dados (executar como superusuario)
 -- CREATE DATABASE assistencia_saude;
 
+
+-- Tabela Emails
+CREATE TABLE IF NOT EXISTS Emails (
+    id SERIAL PRIMARY KEY,
+	Profissional_id serial NOT NULL REFERENCES Profissional(id),
+    telefone VARCHAR(20),
+    email VARCHAR(100),
+);
+
 -- Tabela Agencia
 CREATE TABLE IF NOT EXISTS Agencia (
     id SERIAL PRIMARY KEY,
