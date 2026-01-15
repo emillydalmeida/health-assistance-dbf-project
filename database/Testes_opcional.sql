@@ -1,3 +1,6 @@
-select nome from profissional;
-delete from consulta where profissional_id = 1;
-select * from consulta;
+select * from profissional;
+delete * from consultas;
+select * from pessoa;
+select profissional;
+
+TRUNCATE TABLE pessoa cascade;
